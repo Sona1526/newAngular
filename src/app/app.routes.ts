@@ -11,13 +11,11 @@ import { BookingPageComponent } from './booking-page/booking-page.component';
 import { BookingConfirmationComponent } from './booking-confirmation/booking-confirmation.component';
 
 export const routes: Routes = [
- // {path:'' , redirectTo:'home', pathMatch:'full'},
-  //{path:'**' , redirectTo:'home', pathMatch:'full'},
   {path:'' , component:HomeComponent},
   {path:'myprojects' , component:MyprojectsComponent},
   {path:'hotelbooking' , component:HotelbookingComponent},
   {path:'hotels' , component:HotelsComponent},
-  {path:'hotelDetails/:id' , component:HoteldetailsComponent, data: { renderMode: 'no-pre-render' }},
+  {path:'hotelDetails/:id' , component:HoteldetailsComponent},
   {path:'booking' , component:BookingPageComponent},
   {path:'booking-confirmation' , component:BookingConfirmationComponent}
 ];
